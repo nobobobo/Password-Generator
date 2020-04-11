@@ -27,6 +27,7 @@ function generatePassword() {
     } else {
       passLength = res;
     }
+
   } while (passLength < 8 || passLength > 128);
 
   /* 
@@ -108,6 +109,7 @@ function generatePassword() {
 
       newPass += newChar;
 
+      // check the type of the new char and flip its boolean from typeChecker
       if (lower.includes(newChar)) {
         typeChecker.isLower = true;
       }
