@@ -14,7 +14,7 @@ function generatePassword() {
 
   /* 
   get a length of a new password from user's input. 
-  check and retry if the input is not a number or the length is not between 8 and 128
+  check and retry if the password length is not a number or not between 8 and 128
   */
 
   let passLength = 0;
@@ -131,6 +131,7 @@ function generatePassword() {
     (hasSpecial && !typeChecker.isSpecial)
   );
 
+  // return newly generated password
   return newPass;
 }
 
